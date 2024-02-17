@@ -59,7 +59,7 @@ function Signup() {
   const [api, contextHolder] = notification.useNotification();
   const onSubmit = async(formData: any) => {
     try {
-      const {data} = await axios.post(`http://localhost:8000/api/v1/user/signup`, formData)
+      const {data} = await axios.post(`https://paytm-lake.vercel.app/api/v1/user/signup`, formData)
       console.log(data)
       const savedUser = data.data
       console.log(savedUser)

@@ -18,7 +18,7 @@ function Dashboard() {
         },
       };
       const response = await axios.get(
-        "http://localhost:8000/api/v1/user/bulk?filter=" + query,
+        "https://paytm-lake.vercel.app/api/v1/user/bulk?filter=" + query,
         config
       );
       console.log(response.data);

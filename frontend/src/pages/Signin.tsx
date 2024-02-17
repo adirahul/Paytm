@@ -44,7 +44,7 @@ function Signin() {
   const onSubmit = async(formData: any) => {
     try {
 
-      const {data} = await axios.post(`http://localhost:8000/api/v1/user/login`, formData)
+      const {data} = await axios.post(`https://paytm-lake.vercel.app/api/v1/user/login`, formData)
       if(data.success){
         localStorage.setItem("token", data.token)
         api["success"]({
